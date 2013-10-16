@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script type="text/javascript" src="../Class.js"></script>
+  <script type="text/javascript" src="Game.js"></script>
+  <script type="text/javascript" src="Drawable.js"></script>
+  <script type="text/javascript" src="Pong.js"></script>
+  <script type="text/javascript">
+    function loadGame() {
+      window.pong = pongGame = new Pong();
+      pongGame.start(30);
+    }
+  </script>
+</head>
+<body onload="loadGame()">
+   <canvas id="game-container" width="640" height="480"></canvas> 
+</body>
+</html>
